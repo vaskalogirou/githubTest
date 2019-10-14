@@ -16,6 +16,18 @@ public class HelloController {
 	public String users() {
 		Person person = new Person();
 		person.setName("vasilis");
+
+		int number = 1;
+		number++;
+		number = number + 2;
+		number = number + 3;
+		if (number > 123) {
+			number = 123;
+		} else {
+			number = 321;
+		}
+		
+		
 		return "a new person was created";
 	}
 }
